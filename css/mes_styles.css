@@ -1,1 +1,154 @@
+/* Feuille de style - Correspond à la charte graphique du site */
 
+/* style par défaut */
+
+body {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: large;
+color: rgb(91, 116, 116);
+background-color:#fff;
+text-align: center;
+}
+
+
+
+/* style sur balise */
+h2 {
+    font-size: 1.2em;
+    font-weight: bolder;
+    color: gray;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+img {
+    margin-bottom: 0px;
+    border:none;
+}
+
+
+/* style par défaut des liens hypertextes de tout le site */
+
+a {
+    color:#000 ;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(174, 243, 174) ;
+    text-decoration:none;
+}
+
+/*----------------------------------------------------------------------*/
+
+/* classe de style sur conteneur */
+#principal {
+width:75%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#menuprincipal {
+    background-color: #fff;
+    height: 50px;
+    text-align: left;
+    font-size: smaller;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#baniere {
+border-top: 1px solid #c0c0c0;
+background-image: url("../images/photoouibike.webp");
+background-repeat: no-repeat;
+background-position: top middle;
+background-size: cover;
+height: 500px;
+text-align: center;
+font-size: 2.5em;
+color: #fff;
+}
+
+
+
+/* divers class */
+#menuprincipal img {
+    max-width: 130px; height: auto;
+    vertical-align:middle;
+}
+
+#slogan {
+   margin-top: 10%; 
+}
+
+#baniere input {
+    width:80%; height: 52px;
+    border-radius:35px;
+    color:#c0c0c0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.4em;
+}
+
+#louer {
+    color: gray;
+    font-family:mistral;
+    font-size: 1.8em;
+    margin-top: 9%;
+}
+
+
+#burger {
+    display:none;
+    font-size: 1.5em;
+        }
+
+#sousmenu a {
+    margin-left:50px;
+}
+
+/*----------------------------------------------------------------------*/
+/* smathphone */
+ @media screen and (max-width:800px) {
+
+            #louer {
+                font-size: 1em;
+                margin-top: 9%;
+            }
+
+            #burger {
+                display:inline;
+                margin-left: 25px;
+            }
+            #slogan {
+                font-size: 0.7em;
+             }
+
+             #sousmenu {
+                display:none;
+             }
+
+        }
+
+
+/*----------------------------------------------------------------------*/
+/* Les 4 div en bas de la page*/
+
+        #flex-conteneur{
+            display: flex;
+            flex-direction: row ;
+            flex-wrap: wrap; /* retour à la ligne wrap ou nowrap */
+            justify-content: space-around; /* flex-start ou flex-end ou space-between */
+            margin-top: 50px;
+        }
+        
+        #flex-conteneur div {
+            width:250px;
+            margin-bottom: 10px;
+        }
+
+        #flex-conteneur img {
+            width:100px;
+            margin-bottom: 0px;
+            margin-top: 20px;
+        }
+        
