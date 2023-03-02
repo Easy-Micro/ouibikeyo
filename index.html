@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ouibike | Location de vélo en France</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/mes_styles.css">
+</head>
+<body>
+<div id="principal">
+    <nav id="menuprincipal">
+        <a href="https://www.ouibike.net/" title="Ouibike"><img src="images/logo-ouibike.png" alt="ouibike"></a> 
+        <span id="sousmenu">
+            <a href="#" title="Ouibike">RÉSERVER</a> 
+            <a href="#" title="Ouibike">LES DÉPARTEMENTS À VÉLO</a> 
+            <a href="#" title="Ouibike">VOUS ÊTES LOUEUR</a>
+        </span>
+        <a href="#" id="burger" onclick="affichemenu()">&#9776;</a>
+        <!-- <span style="margin-left: 400px;">
+        <a href="#" title="Ouibike">ESPACE LOUEUR</a> 
+        <a href="#" title="Ouibike">FR</a> &gt;</span> -->
+    </nav>
+    <div id="baniere">
+        <p id="slogan">La location de vélos simple et rapide.<br>Dans votre région et partout en France.</p>
+        <form action="traitement.php" method="post">
+        <input type="text" value=" &loz; Lieu |  &loz; Date |  &loz; Vélo et accéssoires">
+        </form>
+        <p id="louer">Louer des vélos en 4 étapes</p>
+    </div>
+    <div id="flex-conteneur">
+        <div><img src="images/velo.jpg" alt="Ouibike"><h2>Trouver votre vélo</h2>
+        Choisissez votre destination, vos dates de location et le type de vélos</div>
+        <div><img src="images/velo.jpg" alt="Ouibike"><h2>Choisissez entre retrait et livraison</h2>
+        Sélectionnez le mode de retrait qui vous convient !</div>
+        <div><img src="images/velo.jpg" alt="Ouibike"><h2>Réservez et payez en ligne</h2>
+        Payez directement en ligne de manière 100% sécurisée. Vos vélos sont réservés.</div>
+        <div><img src="images/velo.jpg" alt="Ouibike"><h2>Profitez de votre vélo</h2>
+        Le jour de votre location de vélo, les vélos sont disponibles. En boutique ou en livraison !</div>
+    </div>
+</div>
+</body>
+</html>
